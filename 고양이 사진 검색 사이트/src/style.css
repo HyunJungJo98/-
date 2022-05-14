@@ -1,0 +1,145 @@
+.item {
+    color: blue;
+}
+
+input {
+    width: 200px;
+}
+@media (max-width: 600px) {
+    input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    input {
+        width: 300px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: white;
+    }
+}
+
+.dark {
+    background-color: #000;
+    color: white;
+}
+
+body.dark .item {
+    color: white;
+}
+
+.detail {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.detail .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    animation: fade-in 0.5s;
+    -o-animation: fade-in 0.5s;
+    -webkit-animation: fade-in 0.5s;
+    -moz-animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.detail.fade {
+    animation: fade-out 1s;
+    -o-animation: fade-out 1s;
+    -webkit-animation: fade-out 1s;
+    -moz-animation: fade-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@-o-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@-moz-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
